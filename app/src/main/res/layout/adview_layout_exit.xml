@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/exit_background"
+            >
+
+        <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exit_text"
+                    android:layout_marginTop="100dp"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/kanit"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                >
+
+                <Button
+                    android:id="@+id/exit_btn_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yes"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:onClick="addThreeForTeamA"
+                    />
+                <Button
+                    android:id="@+id/exit_btn_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="addTwoForTeamA"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
